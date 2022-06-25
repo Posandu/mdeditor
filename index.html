@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <div id="editor">
+    <span class="caret"></span>
+
+    <textarea class="caretTrackingTextarea" wrap="hard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, at! Nemo, quisquam, placeat obcaecati omnis nam ratione cumque quas id repellat voluptates odit veniam commodi totam incidunt eos expedita officia.</textarea>
+
+    <div id="toolbar" tabindex="1">
+
+      <div class="toolbar__item" tabindex="1" data-tool="paragraph">
+        <div class="toolbar__item__icon">
+          P
+        </div>
+        <div class="toolbar__item__label">
+          Paragraph
+        </div>
+      </div>
+
+      <div class="toolbar__item" tabindex="1" data-tool="heading 1">
+        <div class="toolbar__item__icon">
+          H1
+        </div>
+        <div class="toolbar__item__label">
+          Heading 1
+        </div>
+      </div>
+
+      <div class="toolbar__item" tabindex="1" data-tool="code">
+        <div class="toolbar__item__icon">
+          &gt;
+        </div>
+        <div class="toolbar__item__label">
+          Code
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
